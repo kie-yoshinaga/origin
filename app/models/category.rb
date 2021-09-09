@@ -13,12 +13,12 @@ class Category < ActiveHash::Base
     { id: 9, name: '戦争' },
     { id: 10, name: 'ミステリー' },
     { id: 11, name: 'ロマンス' },
-    { id: 10, name: 'SF' },
-    { id: 11, name: 'その他' },
+    { id: 12, name: 'SF' },
+    { id: 13, name: 'その他' },
   ]
 
   include ActiveHash::Associations
-  #has_many :reviews
-  #has_many :users
+  has_many :movie
+  has_many :user
 
 end

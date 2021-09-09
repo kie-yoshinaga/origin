@@ -39,14 +39,15 @@ Things you may want to cover:
 - has_many :comment
 
 ## reviews テーブル
-| Column             | Type    | Options      |
-| ------------------ | ------  | -----------  |
-| title              | string  | null: false  |
-| category_id        | integer | null: false  | 
-| detail             | string  | null: false  |
-| directer           | string  | null: false  |
-| starring           | date    | null: false  |
-| rate               | float   | null: false  |
+| Column             | Type       | Options      |
+| ------------------ | ------     | -----------  |
+| title              | string     | null: false  |
+| category_id        | integer    | null: false  | 
+| detail             | string     | null: false  |
+| directer           | string     | null: false  |
+| starring           | date       | null: false  |
+| rate               | float      | null: false  |
+| user               | references | null: false  |
 
 ### Association
 
